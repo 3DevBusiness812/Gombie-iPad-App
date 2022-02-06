@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StageView" customModule="Gomble" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="jOo-Un-85z" id="yGF-GH-P80"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="864" height="624"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jOo-Un-85z">
+                    <rect key="frame" x="0.0" y="0.0" width="864" height="624"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="heH-55-bV4"/>
+                        <outlet property="delegate" destination="-1" id="zI6-lp-rK3"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="jOo-Un-85z" secondAttribute="bottom" id="FVt-iK-ce6"/>
+                <constraint firstItem="jOo-Un-85z" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LED-Zf-cru"/>
+                <constraint firstAttribute="trailing" secondItem="jOo-Un-85z" secondAttribute="trailing" id="cgT-L0-aag"/>
+                <constraint firstItem="jOo-Un-85z" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="r01-KH-Hx7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="457.97101449275368" y="-2.6785714285714284"/>
+        </view>
+    </objects>
+</document>
